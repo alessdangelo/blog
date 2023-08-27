@@ -118,6 +118,35 @@ $palette: (
   )
 );
 
+:root {
+  --rosewater: #dc8a78;
+  --flamingo: #dd7878;
+  --pink: #ea76cb;
+  --mauve: #8839ef;
+  --red: #d20f39;
+  --maroon: #e64553;
+  --peach: #fe640b;
+  --yellow: #df8e1d;
+  --green: #40a02b;
+  --teal: #179299;
+  --sky: #04a5e5;
+  --sapphire: #209fb5;
+  --blue: #1e66f5;
+  --lavender: #7287fd;
+  --text: #4c4f69;
+  --subtext1: #5c5f77;
+  --subtext0: #6c6f85;
+  --overlay2: #7c7f93;
+  --overlay1: #8c8fa1;
+  --overlay0: #9ca0b0;
+  --surface2: #acb0be;
+  --surface1: #bcc0cc;
+  --surface0: #ccd0da;
+  --crust: #dce0e8;
+  --mantle: #e6e9ef;
+  --base: #eff1f5;
+}
+
 /*
    Colors
    ========================================================================== */
@@ -126,14 +155,21 @@ $background-color: map-get(map-get($palette, "latte"), "base") !default;
 $text-color: map-get(map-get($palette, "latte"), "text") !default;
 $primary-color: map-get(map-get($palette, "latte"), "flamingo") !default;
 
+:root{
+  --primary-color: #dd7878;
+}
+
 $border-color: transparent !default;
 $code-background-color: mix2(#000, $background-color, 15%) !default;
 $code-background-color-dark: mix(#000, $background-color, 20%) !default;
 $form-background-color: mix(#000, $background-color, 15%) !default;
-$footer-background-color: map-get(map-get($palette, "latte"), "mantle") !default;
+$footer-background-color: var(--mantle) !default;
 $masthead-link-color: $text-color !default;
-$masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
-$navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
+$masthead-link-color-hover: $primary-color !default;
+$navicon-link-color-hover: $primary-color !default;
+// $sans-serif: 'sans-serif', Montserrat !default;
+// $sans-serif-narrow: 'sans-serif', Quicksand !default;
+
 
 
 $gray: map-get(map-get($palette, "latte"), "crust") !default;
@@ -167,7 +203,7 @@ $navicon-link-color-hover: mix(#fff, $primary-color, 75%) !default;
 
 /* button colors */
 .btn :hover {
-background-color: $primary-color !important;
+background-color: var(--primary-color)!important;
 }
 
 /* Set style of the Light/Dark switch*/
@@ -202,6 +238,10 @@ background-color: $primary-color !important;
   block-size: 100%;
 }
 
+.sunIcon:hover {
+  color: $text-color !important;
+}
+
 /* Change visible icon(sun/moon) when changing theme */
 html[data-theme="dark"] * > .sunIcon {
   animation: iconOut 500ms forwards;
@@ -220,6 +260,10 @@ html[data-theme="light"] * > .moonIcon {
   animation: iconOut 500ms forwards;
 }
 
+.pacmanIcon {
+  color: var(--yellow);
+  opacity: 0.5;
+}
 /* Animate the Light/Dark toggle button when disappearing */
 @keyframes iconOut {
   0% {
@@ -254,6 +298,50 @@ html[data-theme="light"] * > .moonIcon {
 }
 
 ::selection {
-  background:  $primary-color !important;
+  background:  var(--primary-color) !important;
   color: $background-color !important;
 }
+
+.masthead * > a:hover, .masthead * > a:focus {
+  color: var(--primary-color) !important;
+}
+
+.masthead * > a:hover::before {
+  background: var(--primary-color) !important;
+}
+
+.pacGum:focus{
+  outline: none !important;
+
+}
+
+.pacGum{
+  margin-right: 5px !important;
+}
+
+.selectedColor{
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.pacman{
+  margin-top: 0.5em !important;
+}
+
+// https://github.com/catppuccin/base16
+$base00: "eff1f5" !default; //base
+$base01: "e6e9ef" !default; // mantle
+$base02: "ccd0da" !default; // surface0
+$base03: "bcc0cc" !default; // surface1
+$base04: "acb0be" !default; // surface2
+$base05: "4c4f69" !default; // text
+$base06: "dc8a78" !default; // rosewater
+$base07: "7287fd" !default; // lavender
+$base08: "d20f39" !default; // red
+$base09: "fe640b" !default; // peach
+$base0A: "df8e1d" !default; // yellow
+$base0B: "40a02b" !default; // green
+$base0C: "179299" !default; // teal
+$base0D: "1e66f5" !default; // blue
+$base0E: "8839ef" !default; // mauve
+$base0F: "dd7878" !default; // flamingo

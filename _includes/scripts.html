@@ -45,6 +45,42 @@
       sessionStorage.setItem('theme', 'light');
     }
     document.firstElementChild.setAttribute("data-theme", sessionStorage.getItem('theme'));
+    changeColor();
     return false;
 }
+
+function changePrimaryColor(variable, index) {
+  document.documentElement.style.setProperty('--primary-color', `var(${variable})`);
+  localStorage.setItem('primary_color', variable);
+  localStorage.setItem('selected_index', index);
+  changeColor();
+}
+
+function changeColor() {
+  var defButtons = document.getElementsByClassName('pacGum');
+  var primaryColor = localStorage.getItem('primary_color') || '--flamingo';
+  var selectedIndex = localStorage.getItem('selected_index');
+  document.documentElement.style.setProperty('--primary-color', `var(${primaryColor})`);
+
+  // Loop through each button
+  for (var i = 0; i < defButtons.length; i++) {
+    var button = defButtons[i];
+    var buttonColor =  button.style.backgroundColor;
+
+    // If the button color matches the primary color, set its size to 16px and add the "selectedColor" class
+    if (buttonColor === `var(${primaryColor})`) {
+      button.classList.add('selectedColor');
+
+      // If the button is the selected button, set its index in localStorage
+      if (i === selectedIndex) {
+        localStorage.setItem('selected_index', i);
+      }
+    } else {
+      // Otherwise, remove the "selectedColor" class
+      button.classList.remove('selectedColor');
+    }
+  }
+}
+
+changeColor();
 </script>

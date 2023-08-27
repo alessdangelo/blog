@@ -166,7 +166,7 @@
 
 .author__name {
   margin: 0;
-
+  font-family: 'sans-serif', Quicksand !important;
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 10px;

@@ -1,8 +1,8 @@
 <div class="page__footer-follow">
   <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
+    <!-- {% if site.data.ui-text[site.locale].follow_label %}
       <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
+    {% endif %} -->
 
     {% if site.footer.links %}
       {% for link in site.footer.links %}
@@ -18,4 +18,28 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">{{ site.name | default: site.title }} &copy; {{ site.time | date: '%Y' }}</div>
+
+<div class="pacman" style="display: flex;justify-content: center;align-items: center;">
+  <svg class="pacmanIcon" width="24" height="16" viewBox="0 0 24 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_33_23)">
+      <path d="M15.7274 5.92945C15.2344 4.08953 14.1011 2.4859 12.5313 1.40699C10.9614 0.328086 9.05816 -0.155283 7.16377 0.0438246C5.26938 0.242933 3.5082 1.11145 2.19701 2.49316C0.885811 3.87487 0.110655 5.6791 0.0109638 7.58131C-0.0887275 9.48352 0.493588 11.3589 1.65317 12.8701C2.81276 14.3813 4.4735 15.4291 6.3367 15.8252C8.1999 16.2212 10.1433 15.9394 11.8173 15.0305C13.4913 14.1216 14.786 12.6453 15.4686 10.8669L8 8L15.7274 5.92945Z" fill="#currentColor"/>
+    </g>
+  </svg>
+  <div class="pacGums" style="display: flex;align-items: center">
+    <button class="pacGum" type="button" onclick="changePrimaryColor('--rosewater');" title="rosewater" aria-label="auto" aria-live="polite" style="border-width: 0; border-radius: 100% !important; width: 8px; height: 8px; background-color: var(--rosewater); padding: 0;"></button>
+    <button class="pacGum" type="button" onclick="changePrimaryColor('--flamingo');" title="flamingo" aria-label="auto" aria-live="polite" style="border-width: 0; border-radius: 100% !important; width: 8px; height: 8px; background-color: var(--flamingo); padding: 0;"></button>
+    <button class="pacGum" type="button" onclick="changePrimaryColor('--pink');" title="pink" aria-label="auto" aria-live="polite" style="border-width: 0; border-radius: 100% !important; width: 8px; height: 8px; background-color: var(--pink); padding: 0;"></button>
+    <button class="pacGum" type="button" onclick="changePrimaryColor('--mauve');" title="mauve" aria-label="auto" aria-live="polite" style="border-width: 0; border-radius: 100% !important; width: 8px; height: 8px; background-color: var(--mauve); padding: 0;"></button>
+    <button class="pacGum" type="button" onclick="changePrimaryColor('--red');" title="red" aria-label="auto" aria-live="polite" style="border-width: 0; border-radius: 100% !important; width: 8px; height: 8px; background-color: var(--red); padding: 0;"></button>
+    <button class="pacGum" type="button" onclick="changePrimaryColor('--maroon');" title="maroon" aria-label="auto" aria-live="polite" style="border-width: 0; border-radius: 100% !important; width: 8px; height: 8px; background-color: var(--maroon); padding: 0;"></button>
+    <button class="pacGum" type="button" onclick="changePrimaryColor('--peach');" title="peach" aria-label="auto" aria-live="polite" style="border-width: 0; border-radius: 100% !important; width: 8px; height: 8px; background-color: var(--peach); padding: 0;"></button>
+    <button class="pacGum" type="button" onclick="changePrimaryColor('--yellow');" title="yellow" aria-label="auto" aria-live="polite" style="border-width: 0; border-radius: 100% !important; width: 8px; height: 8px; background-color: var(--yellow); padding: 0;"></button>
+    <button class="pacGum" type="button" onclick="changePrimaryColor('--green');" title="green" aria-label="auto" aria-live="polite" style="border-width: 0; border-radius: 100% !important; width: 8px; height: 8px; background-color: var(--green); padding: 0;"></button>
+    <button class="pacGum" type="button" onclick="changePrimaryColor('--teal');" title="teal" aria-label="auto" aria-live="polite" style="border-width: 0; border-radius: 100% !important; width: 8px; height: 8px; background-color: var(--teal); padding: 0;"></button>
+    <button class="pacGum" type="button" onclick="changePrimaryColor('--sky');" title="sky" aria-label="auto" aria-live="polite" style="border-width: 0; border-radius: 100% !important; width: 8px; height: 8px; background-color: var(--sky); padding: 0;"></button>
+    <button class="pacGum" type="button" onclick="changePrimaryColor('--sapphire');" title="sapphire" aria-label="auto" aria-live="polite" style="border-width: 0; border-radius: 100% !important; width: 8px; height: 8px; background-color: var(--sapphire); padding: 0;"></button>
+    <button class="pacGum" type="button" onclick="changePrimaryColor('--blue');" title="blue" aria-label="auto" aria-live="polite" style="border-width: 0; border-radius: 100% !important; width: 8px; height: 8px; background-color: var(--blue); padding: 0;"></button>
+    <button class="pacGum" type="button" onclick="changePrimaryColor('--lavender');" title="lavender" aria-label="auto" aria-live="polite" style="border-width: 0; border-radius: 100% !important; width: 8px; height: 8px; background-color: var(--lavender); padding: 0;"></button>
+  </div>
+</div>
