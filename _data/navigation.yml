@@ -1,9 +1,11 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "blog"
+    url: https://aless.ch/blog
+  - title: "bits"
+    url: https://aless.ch/bits
+  - title: "bits"
+  url: https://aless.ch/bits
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
