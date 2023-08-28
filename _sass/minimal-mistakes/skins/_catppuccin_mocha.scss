@@ -224,6 +224,10 @@ $base0f: #cc6633 !default;
   color: var(--primary-color) !important;
 }
 
+.masthead * > a:hover::before {
+  background: var(--primary-color) !important;
+}
+
 /* Set style of the Light/Dark switch*/
 .theme-toggle {
   --size: 2rem;
@@ -323,6 +327,17 @@ html[data-theme="dark"] * > .moonIcon {
 :focus{
   outline-color: var(--primary-color) !important;
 }
+
+// change color of toc title
+.nav__title{
+  background: var(--primary-color) !important;
+}
+
+// add lighter variant of primary color to active content on toc
+.toc .active a {
+  background-color: color-mix(in srgb, var(--primary-color) 80%, transparent) !important;
+}
+
 
 // https://github.com/catppuccin/base16
 $base00: "1e1e2e" !default; //base

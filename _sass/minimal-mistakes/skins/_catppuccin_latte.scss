@@ -336,6 +336,16 @@ html[data-theme="light"] * > .moonIcon {
   outline-color: var(--primary-color) !important;
 }
 
+// change color of toc title
+.nav__title{
+  background: var(--primary-color) !important;
+}
+
+// add lighter variant of primary color to active content on toc
+.toc .active a {
+  background-color: color-mix(in srgb, var(--primary-color) 20%, transparent) !important;
+}
+
 // https://github.com/catppuccin/base16
 $base00: "eff1f5" !default; //base
 $base01: "e6e9ef" !default; // mantle

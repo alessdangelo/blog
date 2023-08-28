@@ -107,7 +107,7 @@ analytics:
 author:
   name             : "aless"
   avatar           : "/assets/images/user.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Your beloved nerd."
+  bio              : "Your beloved nerd. he/him"
   location         : "Switzerland, CH_fr"
   email            :
   links:
