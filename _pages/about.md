@@ -5,6 +5,7 @@ toc: true
 toc_sticky: true
 breadcrumbs: false
 author_profile: true
+title: About me
 ---
 
 # Who am i ?
