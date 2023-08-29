@@ -12,6 +12,75 @@ last_modified_at: 2023-08-29T20:48:05-04:00
 {: .notice}
 
 
+# English
+
+## Requirements
+
+-   Download the [Python](https://www.python.org/downloads/) installer for your current Operating System (Should automatically be selected)
+-   VS Code & VS Code extension “Python”
+
+## Install Python & Django on Windows
+
+1.  Open the installation software and follow the on-screen instructions to install Python. You may need to enter your password to authorize the installation. You can also install the version offered on the Microsoft Store. And that's it!
+    
+    ![0-python.png](/blog/assets/images/bits/0-python.png)
+    
+2.  Open PowerShell and enter this command to install Django:
+    
+    ```powershell
+    python -m pip install Django
+    ```
+    
+    ![1-installDjangoPS.png](/blog/assets/images/bits/1-installDjangoPS.png)
+    
+3.  If you have a "PATH" system environment variable error, you can add it manually by running the "Change environment variables for your account" program
+    
+    ![MicrosoftTeams-image (1).png](/blog/assets/images/bits/MicrosoftTeams-image_(1).png)
+    
+
+-   In the "Path" variable > modify > new > copy and paste the installation path of Django which in our case is:
+
+```
+C:\\Users\\%user%\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts
+```
+
+💡 NOTE: it is possible that following an update of python, the path changes, it will be necessary to seek the correct path starting from "\Packages\”
+{: .notice}
+
+1.  in power shell, use the command "cd" to go to the working directory of your project and type the command "django-admin startproject ProjectName
+
+```powershell
+django-admin startproject ProjectName
+```
+
+-   Navigate once again to the project directory and type the following command to start the local server
+
+```python
+python manage.py runserver
+```
+
+![3-4-createProjectAndRun.png](/blog/assets/images/bits/3-4-createProjectAndRun.png)
+
+1.  In your browser, type "localhost:8000" and see the default page of Django
+    
+    ![5-defaultPageDjango.png](/blog/assets/images/bits/5-defaultPageDjango.png)
+    
+
+## Install Python & Django on MacOS
+
+1.  Open the package and follow the instructions on screen in order to install python. You may have to enter your password to allow the installation. You’re done !
+2.  Install the Python package manager (pip) by pasting this line in the terminal in order to add new modules to our python projects.
+
+```bash
+python3 -m pip install --upgrade pip
+```
+
+1.  To install Django, simply enter the line below in the terminal. This is using the Python Package Manager (See previous step)
+
+```bash
+pip3 install Django
+```
+
 # Français
 
 ## Prérequis
@@ -56,7 +125,7 @@ django-admin startproject NomDuProjet
 -   deplacer vous encore une fois dans le dossier du nom de projet et taper la commande suivante pour lancer le serveur local
 
 ```python
-python [manage.py](<http://manage.py/>) runserver
+python manage.py runserver
 ```
 
 ![3-4-createProjectAndRun.png](/blog/assets/images/bits/3-4-createProjectAndRun.png)
@@ -81,74 +150,6 @@ python3 -m pip install --upgrade pip
 pip3 install Django
 ```
 
-# English
-
-# Requirements
-
--   Download the [Python](https://www.python.org/downloads/) installer for your current Operating System (Should automatically be selected)
--   VS Code & VS Code extension “Python”
-
-## Install Python & Django on Windows
-
-1.  Open the installation software and follow the on-screen instructions to install Python. You may need to enter your password to authorize the installation. You can also install the version offered on the Microsoft Store. And that's it!
-    
-    ![0-python.png](/blog/assets/images/bits/0-python.png)
-    
-2.  Open PowerShell and enter this command to install Django:
-    
-    ```powershell
-    python -m pip install Django
-    ```
-    
-    ![1-installDjangoPS.png](/blog/assets/images/bits/1-installDjangoPS.png)
-    
-3.  If you have a "PATH" system environment variable error, you can add it manually by running the "Change environment variables for your account" program
-    
-    ![MicrosoftTeams-image (1).png](/blog/assets/images/bits/MicrosoftTeams-image+(1).png)
-    
-
--   In the "Path" variable > modify > new > copy and paste the installation path of Django which in our case is:
-
-```
-C:\\Users\\%user%\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts
-```
-
-💡 NOTE: it is possible that following an update of python, the path changes, it will be necessary to seek the correct path starting from "\Packages\”
-{: .notice}
-
-1.  in power shell, use the command "cd" to go to the working directory of your project and type the command "django-admin startproject ProjectName
-
-```powershell
-django-admin startproject ProjectName
-```
-
--   Navigate once again to the project directory and type the following command to start the local server
-
-```python
-python [manage.py](<http://manage.py/>) runserver
-```
-
-![3-4-createProjectAndRun.png](/blog/assets/images/bits/3-4-createProjectAndRun.png)
-
-1.  In your browser, type "localhost:8000" and see the default page of Django
-    
-    ![5-defaultPageDjango.png](/blog/assets/images/bits/5-defaultPageDjango.png)
-    
-
-## Install Python & Django on MacOS
-
-1.  Open the package and follow the instructions on screen in order to install python. You may have to enter your password to allow the installation. You’re done !
-2.  Install the Python package manager (pip) by pasting this line in the terminal in order to add new modules to our python projects.
-
-```bash
-python3 -m pip install --upgrade pip
-```
-
-1.  To install Django, simply enter the line below in the terminal. This is using the Python Package Manager (See previous step)
-
-```bash
-pip3 install Django
-```
 
 # Sources
 
