@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "blog"
-    url: https://aless.ch/blog
+    url: /
   - title: "bits"
     url: /bits/
   - title: "about"

@@ -189,7 +189,7 @@ $primary-color: map-get(map-get($palette, "latte"), "flamingo") !default;
 $success-color: map-get(map-get($palette, "latte"), "green") !default;
 $warning-color: map-get(map-get($palette, "latte"), "peach") !default;
 $danger-color: map-get(map-get($palette, "latte"), "red") !default;
-$info-color: map-get(map-get($palette, "latte"), "sky") !default;
+$info-color: map-get(map-get($palette, "latte"), "blue") !default;
 $focus-color: $primary-color !default;
 $active-color: mix(#fff, $primary-color, 80%) !default;
 
@@ -348,12 +348,30 @@ html[data-theme="light"] * > .moonIcon {
 .toc .active a {
   background-color: color-mix(in srgb, var(--primary-color) 20%, transparent) !important;
 }
+.page__title a:link {
+  color: var(--text) !important;
+}
+
+.toc__menu a:link {
+  color: var(--text) !important;
+}
 
 //color of link icon
 .fas.fa-link::before{
   color: var(--primary-color) !important;
 }
 
+.notice a, .page__inner-wrap a{
+  color: var(--primary-color) !important;
+}
+
+.notice a, .page__inner-wrap a:hover{
+  color: color-mix(in srgb, var(--primary-color) 80%, transparent) !important;
+}
+
+.notice a, .page__inner-wrap a:visited{
+  color: color-mix(in srgb, var(--primary-color) 50%, transparent) !important;
+}
 // https://github.com/catppuccin/base16
 $base00: "eff1f5" !default; //base
 $base01: "e6e9ef" !default; // mantle
@@ -371,3 +389,8 @@ $base0C: "179299" !default; // teal
 $base0D: "1e66f5" !default; // blue
 $base0E: "8839ef" !default; // mauve
 $base0F: "dd7878" !default; // flamingo
+
+.highlight{
+  background-color: var(--mantle) !important;
+  border-radius: 4px;
+}
