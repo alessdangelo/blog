@@ -23,7 +23,7 @@ last_modified_at: 2023-08-29T20:48:05-04:00
 
 1.  Ouvrez le logiciel d’installation et suivez les instructions à l'écran afin d'installer python. Vous devrez peut-être entrer votre mot de passe pour autoriser l'installation. Vous pouvez aussi installer la version proposée sur le microsoft store. Voilà, c'est fait !
     
-    ![0-python.png](/assets/images/bits/0-python.png)
+    ![0-python.png](/blog/assets/images/bits/0-python.png)
     
 2.  Ouvrez powershell et saisissez cette commande afin d’installer Django
     
@@ -32,11 +32,11 @@ last_modified_at: 2023-08-29T20:48:05-04:00
 python -m pip install Django
 ```
 
-![1-installDjangoPS.png](/assets/images/bits/1-installDjangoPS.png)
+![1-installDjangoPS.png](/blog/assets/images/bits/1-installDjangoPS.png)
 
 1.  Si vous avez une erreur de variable d’environnement système du “PATH”, vous pouvez l’ajouter manuellement en lançant le logiciel “Modifier les variables d’environnement pour votre compte”
 
-![MicrosoftTeams-image (1).png](/assets/images/bits/MicrosoftTeams-image_(1).png)
+![MicrosoftTeams-image (1).png](/blog/assets/images/bits/MicrosoftTeams-image_(1).png)
 
 -   Dans la variable "Path" > modifier > nouveau > copier coller le chemin d'installation de Django qui est dans notre cas:
 
@@ -44,9 +44,8 @@ python -m pip install Django
 C:\\Users\\%user%\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts
 ```
 
-<aside> 💡 _**NOTE**_: il est possible que suite à une mise à jour de python, le chemin change, il faudra donc chercher le chemin correct en partant de “\Packages\”
-
-</aside>
+💡 _**NOTE**_: il est possible que suite à une mise à jour de python, le chemin change, il faudra donc chercher le chemin correct en partant de “\Packages\”
+{: .notice}
 
 1.  dans power shell, utiliser la commande "cd" pour aller dans le repertoire de travail pour votre projet et tapez la commande "django-admin startproject NomDuProjet”
 
@@ -60,11 +59,11 @@ django-admin startproject NomDuProjet
 python [manage.py](<http://manage.py/>) runserver
 ```
 
-![3-4-createProjectAndRun.png](/assets/images/bits/3-4-createProjectAndRun.png)
+![3-4-createProjectAndRun.png](/blog/assets/images/bits/3-4-createProjectAndRun.png)
 
 1.  Dans votre navigateur, tapez "localhost:8000" et constater la page par defaut de Django
     
-    ![5-defaultPageDjango.png](/assets/images/bits/5-defaultPageDjango.png)
+    ![5-defaultPageDjango.png](/blog/assets/images/bits/5-defaultPageDjango.png)
     
 
 ## Installer Python & Django sur MacOS
@@ -93,7 +92,7 @@ pip3 install Django
 
 1.  Open the installation software and follow the on-screen instructions to install Python. You may need to enter your password to authorize the installation. You can also install the version offered on the Microsoft Store. And that's it!
     
-    ![0-python.png](/assets/images/bits/0-python.png)
+    ![0-python.png](/blog/assets/images/bits/0-python.png)
     
 2.  Open PowerShell and enter this command to install Django:
     
@@ -101,11 +100,11 @@ pip3 install Django
     python -m pip install Django
     ```
     
-    ![1-installDjangoPS.png](/assets/images/bits/1-installDjangoPS.png)
+    ![1-installDjangoPS.png](/blog/assets/images/bits/1-installDjangoPS.png)
     
 3.  If you have a "PATH" system environment variable error, you can add it manually by running the "Change environment variables for your account" program
     
-    ![MicrosoftTeams-image (1).png](/assets/images/bits/MicrosoftTeams-image+(1).png)
+    ![MicrosoftTeams-image (1).png](/blog/assets/images/bits/MicrosoftTeams-image+(1).png)
     
 
 -   In the "Path" variable > modify > new > copy and paste the installation path of Django which in our case is:
@@ -114,9 +113,8 @@ pip3 install Django
 C:\\Users\\%user%\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts
 ```
 
-<aside> 💡 NOTE: it is possible that following an update of python, the path changes, it will be necessary to seek the correct path starting from "\Packages\”
-
-</aside>
+💡 NOTE: it is possible that following an update of python, the path changes, it will be necessary to seek the correct path starting from "\Packages\”
+{: .notice}
 
 1.  in power shell, use the command "cd" to go to the working directory of your project and type the command "django-admin startproject ProjectName
 
@@ -130,11 +128,11 @@ django-admin startproject ProjectName
 python [manage.py](<http://manage.py/>) runserver
 ```
 
-![3-4-createProjectAndRun.png](/assets/images/bits/3-4-createProjectAndRun.png)
+![3-4-createProjectAndRun.png](/blog/assets/images/bits/3-4-createProjectAndRun.png)
 
 1.  In your browser, type "localhost:8000" and see the default page of Django
     
-    ![5-defaultPageDjango.png](/assets/images/bits/5-defaultPageDjango.png)
+    ![5-defaultPageDjango.png](/blog/assets/images/bits/5-defaultPageDjango.png)
     
 
 ## Install Python & Django on MacOS
