@@ -310,9 +310,12 @@ html[data-theme="light"] * > .moonIcon {
   background: var(--primary-color) !important;
 }
 
+.kofi-button{
+  background-color: var(--primary-color) !important;
+}
+
 .pacGum:focus{
   outline: none !important;
-
 }
 
 .pacGum{
@@ -344,6 +347,11 @@ html[data-theme="light"] * > .moonIcon {
 // add lighter variant of primary color to active content on toc
 .toc .active a {
   background-color: color-mix(in srgb, var(--primary-color) 20%, transparent) !important;
+}
+
+//color of link icon
+.fas.fa-link::before{
+  color: var(--primary-color) !important;
 }
 
 // https://github.com/catppuccin/base16

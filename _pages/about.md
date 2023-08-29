@@ -8,12 +8,15 @@ author_profile: true
 title: About me
 ---
 
+
 # Who am i ?
 I'm Aless, a nerd living & studying in Switzerland.
 I speak French and English and my pronouns are he/him.
 I believe in an inclusive and eco-friendly tech world.
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U6U05DMSP)
+
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'U6U05DMSP');kofiwidget2.draw();</script> 
+
 
 ## What am i doing ?
 I got my degree as a software developper in 2023 and I'm currently studying for a diploma of professional maturity in arts.
