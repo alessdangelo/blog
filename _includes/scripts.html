@@ -49,6 +49,28 @@
     return false;
 }
 
+function toggleOled(){;
+  if (localStorage.getItem('oled') === 'true') {
+    localStorage.setItem('oled', 'false');
+    document.documentElement.style.setProperty('--background-color', `#1e1e2e`);
+    document.documentElement.style.setProperty('--footer-background-color', `var(--mantle)`);
+    return;
+  }else{
+    localStorage.setItem('oled', 'true');
+    document.documentElement.style.setProperty('--background-color', `black`);
+    document.documentElement.style.setProperty('--footer-background-color', `black`);
+    return;
+  }
+}
+
+function reflectOled(){
+  if (localStorage.getItem('oled') === 'true') {
+    document.documentElement.style.setProperty('--background-color', `black`);
+    document.documentElement.style.setProperty('--footer-background-color', `black`);
+    return;
+  }
+}
+
 function changePrimaryColor(variable, index) {
   document.documentElement.style.setProperty('--primary-color', `var(${variable})`);
   localStorage.setItem('primary_color', variable);
@@ -83,4 +105,5 @@ function changeColor() {
 }
 
 changeColor();
+reflectOled();
 </script>

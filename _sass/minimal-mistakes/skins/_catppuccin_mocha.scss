@@ -153,6 +153,8 @@ $primary-color: map-get(map-get($palette, "mocha"), "flamingo") !default;
 
 :root{
   --primary-color: #f2cdcd;
+  --background-color: #1e1e2e;
+  --footer-background-color: var(--mantle);
 }
 
 
@@ -393,4 +395,12 @@ $base0F: "f2cdcd" !default; // flamingo
 .highlight{
   background-color: var(--mantle) !important;
   border-radius: 4px;
+}
+
+footer, .page__footer{
+  background-color: var(--footer-background-color) !important;
+}
+
+body, nav, .page__date{
+  background-color: var(--background-color) !important;
 }
