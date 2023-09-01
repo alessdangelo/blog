@@ -79,6 +79,7 @@ bing_site_verification   :
 naver_site_verification  :
 yandex_site_verification :
 baidu_site_verification  :
+future                   : true
 
 # Social Sharing
 twitter:
@@ -161,6 +162,7 @@ include:
   - .htaccess
   - _pages
   - _bits
+  - _posts
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"

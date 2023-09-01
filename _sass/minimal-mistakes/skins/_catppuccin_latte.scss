@@ -391,10 +391,14 @@ $base0E: "8839ef" !default; // mauve
 $base0F: "dd7878" !default; // flamingo
 
 .highlight{
-  background-color: var(--mantle) !important;
+  background-color: white !important;
   border-radius: 4px;
 }
 
 .oledButton{
   display: none;
+}
+
+a.btn{
+  color: var(--base) !important;
 }
