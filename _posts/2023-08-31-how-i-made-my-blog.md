@@ -16,10 +16,11 @@ last_modified_at: 2023-09-01T13:57:05-04:00
 I've had enough time recently to work on something I kept pushing away until now; My blog. As I bought the domain "aless.ch" a few month ago, I've solely used it as a way to share my links, but it wasn't enough, I wanted to be able to share my thoughts on my own platform, this is my train of thought.
 
 Making a blog from scratch would have been an hassle and induce much more headache I would have been prepared for. So I've done some research on what I could use, this is the most relevant and github-pages friendly I found :
-    - Jekyll
-    - Hugo
-    - Gatsby
-    - Ghost
+- Jekyll
+- Hugo
+- Gatsby
+- Ghost
+
 Each of them has their strength and weaknesses, but I won't go in details in this article.
 
 I chose Jekyll as it was the most covered online, which helped me on how to setup my project. As Jekyll allows to use a theme as a base, I've tried finding the one that would be modern and not too cluttered, while also being easy to work with.
@@ -38,7 +39,7 @@ My palette of choice has been [catppuccin](https://catppuccin-website.vercel.app
 
 ### Theme Switch
 
-> courtesy of user [sohamsaha99](https://github.com/sohamsaha99)[on Jan 2, 2021](https://github.com/mmistakes/minimal-mistakes/discussions/2033#discussioncomment-257421)
+> courtesy of user [sohamsaha99](https://github.com/sohamsaha99)[ on Jan 2, 2021](https://github.com/mmistakes/minimal-mistakes/discussions/2033#discussioncomment-257421)
 
 As this is not a feature supported by Minimal Mistakes, I had to add it manually, using this [thread](https://github.com/mmistakes/minimal-mistakes/discussions/2033) which gave me everything I needed.
 
@@ -47,8 +48,8 @@ Firstly, you got to add a second stylesheet, which will contain the dark theme a
 > `_config.yml`
 
 ```yml
-    minimal_mistakes_skin : "catppuccin_latte" 
-    minimal_mistakes_skin_dark: "catppuccin_mocha"
+minimal_mistakes_skin : "catppuccin_latte" 
+minimal_mistakes_skin_dark: "catppuccin_mocha"
 ```
 
 This added, we need to create a file in our project directory, inside "assets/css" named "theme2.scss" which would contain :
