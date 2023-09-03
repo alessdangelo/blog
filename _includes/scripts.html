@@ -73,6 +73,7 @@ function reflectOled(){
 
 function changePrimaryColor(variable, index) {
   document.documentElement.style.setProperty('--primary-color', `var(${variable})`);
+  document.documentElement.style.setProperty('--link-color', `var(--primary-color)`);
   localStorage.setItem('primary_color', variable);
   localStorage.setItem('selected_index', index);
   changeColor();
@@ -83,6 +84,7 @@ function changeColor() {
   var primaryColor = localStorage.getItem('primary_color') || '--flamingo';
   var selectedIndex = localStorage.getItem('selected_index');
   document.documentElement.style.setProperty('--primary-color', `var(${primaryColor})`);
+  document.documentElement.style.setProperty('--link-color', `var(--primary-color)`);
 
   // Loop through each button
   for (var i = 0; i < defButtons.length; i++) {

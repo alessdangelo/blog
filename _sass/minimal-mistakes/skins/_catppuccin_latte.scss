@@ -157,6 +157,7 @@ $primary-color: map-get(map-get($palette, "latte"), "flamingo") !default;
 
 :root{
   --primary-color: #dd7878;
+  --link-color: #f2cdcd;
 }
 
 $border-color: transparent !default;
@@ -361,16 +362,24 @@ html[data-theme="light"] * > .moonIcon {
   color: var(--primary-color) !important;
 }
 
+//add color to links
 .notice a, .page__inner-wrap a{
   color: var(--primary-color) !important;
+}
+
+//add colors to link in page content
+.page__inner-wrap * > a, .entries-list * > a{
+  color: var(--link-color) !important;
 }
 
 .notice a, .page__inner-wrap a:hover{
   color: color-mix(in srgb, var(--primary-color) 80%, transparent) !important;
 }
 
+//Remove color from visited links
 .notice a, .page__inner-wrap a:visited{
-  color: color-mix(in srgb, var(--primary-color) 50%, transparent) !important;
+  // color: color-mix(in srgb, var(--primary-color) 50%, transparent) !important;
+  color: var(--text) !important;
 }
 // https://github.com/catppuccin/base16
 $base00: "eff1f5" !default; //base
