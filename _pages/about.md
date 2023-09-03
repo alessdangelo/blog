@@ -1,11 +1,12 @@
 ---
 permalink: /about/
 layout: single
-toc: true
-toc_sticky: true
+toc: false
+# toc_sticky: true
 breadcrumbs: false
 author_profile: true
-title: About me
+classes: wide
+title: ""
 ---
 
 
